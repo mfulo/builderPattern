@@ -14,7 +14,10 @@ However, you encounter challenges: <br>
 Implement solution using the Builder Pattern to address the issue.
 
 ## UML Diagram
+![Blank diagram](https://github.com/mfulo/builderPattern/assets/142382665/930df35c-3828-4ace-a865-59a7c37ff3bb)
+
 
 ## Sample output
 ![valid](https://github.com/mfulo/builderPattern/assets/142382665/b6624c57-8c60-4f71-a954-b5d239f17786)
+
 ![invalid](https://github.com/mfulo/builderPattern/assets/142382665/aecbdf37-b260-4f4a-b242-4f88ded87266)
