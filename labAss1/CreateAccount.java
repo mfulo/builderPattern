@@ -20,20 +20,18 @@ public class CreateAccount {
 		System.out.print("Enter age: ");
 		int ag = 0;
 		if (sc.hasNextLine()) {
-			String age = sc.nextLine();
-            if (!age.isEmpty()) {
-                try {
-                    ag = Integer.parseInt(age);
-                    if (ag<0) {
-                    	ag=0;
-                    	System.out.println("[Invalid age. Age set to blank.]");
-                    }
-                    	
-                } catch (NumberFormatException e) {
-                    System.out.println("[Invalid age. Age set to blank.]");
-                }
-            }
-		}
+		    String age = sc.nextLine();
+		    if (age.isEmpty()) {}
+			else {
+	            if (age.matches("^[1-9]\\d*$")) {
+	            	ag = Integer.parseInt(age);
+	            }
+		        else {
+	                System.out.print("[Invalid age. Registration failed.]");
+	                System.exit(0);
+	            }
+           	}     
+	    }
         
 		Account acc = new Account.AccountBuilder()
 				.firstName(fn)
